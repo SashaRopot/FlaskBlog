@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+Информация о пользователях
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1>Пользователи</h1>
+    {% for el in art %}
+    <div class="alert-info">
+        <h2>{{ el.user }}</h2>
+        <p>{{ el.tel }}</p>
+
+    </div>
+    {% endfor %}
+
+<!--    {{ art.user }}-->
+<!--    {{ art.tel }}-->
+</div>
+
+{% endblock %}
